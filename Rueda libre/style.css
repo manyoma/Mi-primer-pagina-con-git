@@ -1,0 +1,7 @@
+.table-container{
+     border: 1px  solid black ;
+}
+
+.table-container th, td{
+    border: 1px solid black;
+}
