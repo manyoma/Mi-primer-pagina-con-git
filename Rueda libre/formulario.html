@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva</title>
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
-    <form action="">
-        <fieldset>
-            <legend>Formulario del Reserva</legend>
+    <form class="formulario">
         
         <p>
             <label for="Name">Nombre</label>
-            <input type="text" id="Name" name="Name" required minlength="3">
+            <input type="text" id="Name" name="Name"class="input" required minlength="3">
         </p>
         <p>
             <label for="Email">Correo electrico</label>
-            <input type="email" id="Email" name="Email" required>
+            <input type="email" id="Email" name="Email" class="input" required>
         </p>
         <p>
             <label for="Data">Fecha</label>
-            <input type="date" id="Data" name="Data" required>
+            <input type="date" id="Data" name="Data" class="input" required>
         </p>
         <p>
             <label for="tipo_c">Tipo bicicleta</label>
@@ -31,10 +30,11 @@
             </select>
         </p>
         <p>
-            <button type="submit">Reservar</button>
+            <button class="btn" type="submit">Reservar</button>
         </p>
-        </fieldset>
+       
     </form>
         <a href="https://www.whatsapp.com/">Contactanos</a>
+        <a href="index.html">Volver a la pagina principal</a>
 </body>
 </html>

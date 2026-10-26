@@ -1,7 +1,227 @@
-.table-container{
-     border: 1px  solid black ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.table-container th, td{
-    border: 1px solid black;
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f7f8f2;
+    color: #34463a;
+    line-height: 1.8;
+}
+
+
+img {
+    display: block;
+    width: 88%;
+    max-width: 1100px;
+    height: 390px;
+    object-fit: cover;
+    margin: 35px auto;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(20, 58, 37, 0.18);
+    border: 5px solid white;
+    transition: all 0.4s ease;
+}
+
+img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(20, 58, 37, 0.25);
+}
+
+
+
+h1 {
+    background: linear-gradient(135deg, #102f23, #176b45, #258653);
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+    border-bottom: 5px solid #b8d98b;
+    box-shadow: 0 8px 25px rgba(16, 47, 35, 0.18);
+}
+
+
+h1 + p {
+    max-width: 950px;
+    margin: 40px auto 10px;
+    padding: 0 25px;
+    color: #176b45;
+    font-size: 27px;
+    font-weight: 750;
+    text-align: center;
+    line-height: 1.4;
+}
+
+h1 + p + p {
+    max-width: 850px;
+    margin: 15px auto 35px;
+    padding: 0 25px;
+    color: #68786b;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.9;
+}
+
+h2 {
+    color: #174b32;
+    font-size: 32px;
+    font-weight: 750;
+    text-align: center;
+    margin: 65px auto 30px;
+    padding: 0 15px 18px;
+    width: 85%;
+    max-width: 1000px;
+    border-bottom: 3px solid #b5d69a;
+    position: relative;
+}
+
+
+h2::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 5px;
+    background: #238653;
+    border-radius: 10px;
+    margin: 15px auto -25px;
+}
+
+h3 {
+    max-width: 1000px;
+    margin: 35px auto 15px;
+    padding: 18px 25px;
+    background: linear-gradient(90deg, #e1efdf, #f0f6e9);
+    color: #176b45;
+    font-size: 23px;
+    font-weight: 750;
+    border-left: 6px solid #258653;
+    border-radius: 0 14px 14px 0;
+    box-shadow: 0 5px 15px rgba(23, 75, 50, 0.06);
+    transition: all 0.3s ease;
+}
+
+h3:hover {
+    border-left-width: 10px;
+    background: #e5f2df;
+}
+
+
+
+p {
+    max-width: 1000px;
+    margin: 18px auto;
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #526257;
+    text-align: justify;
+}
+
+
+strong {
+    color: #176b45;
+    font-weight: 800;
+}
+
+
+a {
+    display: inline-block;
+    margin: 12px 20px;
+    padding: 13px 30px;
+    background: linear-gradient(135deg, #258653, #176b45);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 750;
+    letter-spacing: 0.3px;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid #258653;
+    box-shadow: 0 7px 18px rgba(23, 107, 69, 0.18);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: #ffffff;
+    color: #176b45;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(23, 107, 69, 0.22);
+}
+
+form {
+    max-width: 620px;
+    margin: 45px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 22px;
+    border: 1px solid #e4ecdf;
+    box-shadow: 0 12px 35px rgba(23, 75, 50, 0.10);
+}
+
+label {
+    display: block;
+    margin: 18px 0 7px;
+    color: #176b45;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: #fafcf8;
+    color: #34463a;
+    border: 1px solid #d7e3d4;
+    border-radius: 11px;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #258653;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 134, 83, 0.12);
+}
+
+/* BOTONES DEL FORMULARIO */
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #258653, #176b45);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 750;
+    cursor: pointer;
+    box-shadow: 0 7px 18px rgba(23, 107, 69, 0.18);
+    transition: all 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #10452d;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(23, 107, 69, 0.25);
+}
+
+

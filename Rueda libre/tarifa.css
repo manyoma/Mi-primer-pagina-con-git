@@ -1,0 +1,273 @@
+/* ==========================================
+   RUEDA LIBRE - PAGINA DE TARIFAS
+   Diseño moderno y profesional
+========================================== */
+
+/* CONFIGURACION GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f7f1;
+    color: #34463a;
+    line-height: 1.8;
+    padding-bottom: 40px;
+}
+
+/* ==========================================
+   BOTONES Y ENLACES
+========================================== */
+
+a {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 26px;
+    background: linear-gradient(135deg, #238653, #14532d);
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(20, 83, 45, 0.18);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: #ffffff;
+    color: #176b45;
+    transform: translateY(-3px);
+    box-shadow: 0 9px 20px rgba(20, 83, 45, 0.2);
+}
+
+/* ==========================================
+   IMAGEN PRINCIPAL
+========================================== */
+
+img {
+    display: block;
+    width: 85%;
+    max-width: 1000px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px auto 40px;
+    border: 5px solid white;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(20, 83, 45, 0.16);
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.01);
+}
+
+/* ==========================================
+   TITULO PRINCIPAL
+========================================== */
+
+h1 {
+    background: linear-gradient(135deg, #102f23, #176b45, #258653);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 45px 0 30px;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+    border-top: 4px solid #b8d98b;
+    border-bottom: 4px solid #b8d98b;
+    box-shadow: 0 8px 25px rgba(16, 47, 35, 0.15);
+}
+
+/* ==========================================
+   TITULOS SECUNDARIOS
+========================================== */
+
+h2 {
+    max-width: 1000px;
+    width: 90%;
+    margin: 45px auto 15px;
+    padding: 0 10px 15px;
+    color: #174b32;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 3px solid #b5d69a;
+}
+
+h3 {
+    max-width: 1000px;
+    margin: 35px auto 15px;
+    padding: 15px 22px;
+    color: #176b45;
+    background: linear-gradient(90deg, #e0efdd, #f0f6e9);
+    border-left: 6px solid #258653;
+    border-radius: 0 12px 12px 0;
+    font-size: 22px;
+}
+
+h4 {
+    max-width: 1000px;
+    margin: 25px auto 10px;
+    padding: 0 20px;
+    color: #176b45;
+    font-size: 19px;
+}
+
+/* ==========================================
+   PARRAFOS
+========================================== */
+
+p {
+    max-width: 1000px;
+    margin: 18px auto;
+    padding: 0 22px;
+    color: #58675b;
+    font-size: 16px;
+}
+
+strong {
+    color: #176b45;
+    font-weight: 800;
+}
+
+/* ==========================================
+   LISTAS DE PASOS Y BENEFICIOS
+========================================== */
+
+ol,
+ul {
+    max-width: 950px;
+    margin: 20px auto 35px;
+    padding: 25px 35px 25px 55px;
+    background-color: white;
+    border: 1px solid #e2eadf;
+    border-radius: 18px;
+    box-shadow: 0 7px 22px rgba(20, 83, 45, 0.07);
+}
+
+li {
+    padding: 8px 5px;
+    color: #4e6052;
+    font-size: 16px;
+}
+
+li::marker {
+    color: #258653;
+    font-weight: bold;
+}
+
+/* ==========================================
+   TABLAS CON EFECTO DE TARJETAS
+========================================== */
+
+.table-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto 55px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-spacing: 0 8px;
+    border-collapse: separate;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(20, 83, 45, 0.10);
+    overflow: hidden;
+}
+
+/* TITULO DE CADA TABLA */
+
+caption {
+    caption-side: top;
+    padding: 22px 15px;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #14532d, #258653);
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 14px;
+}
+
+/* ENCABEZADOS */
+
+thead {
+    background-color: #e5f0e1;
+}
+
+th {
+    padding: 18px 14px;
+    color: #176b45;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-bottom: 2px solid #b5d69a;
+}
+
+/* CELDAS */
+
+td {
+    padding: 18px 14px;
+    text-align: center;
+    font-size: 15px;
+    color: #526257;
+    background-color: #ffffff;
+    border-bottom: 1px solid #edf1e9;
+    transition: all 0.25s ease;
+}
+
+/* PRIMERA COLUMNA DESTACADA */
+
+tbody td:first-child {
+    color: #176b45;
+    font-weight: 800;
+    text-align: left;
+}
+
+/* PRECIOS DESTACADOS */
+
+tbody td:last-child {
+    color: #176b45;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+/* EFECTO AL PASAR POR CADA FILA */
+
+tbody tr {
+    transition: transform 0.25s ease;
+}
+
+tbody tr:hover {
+    transform: scale(1.01);
+}
+
+tbody tr:hover td {
+    background-color: #edf6e9;
+}
+
+/* ESQUINAS REDONDEADAS EN LAS FILAS */
+
+tbody td:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+tbody td:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+
+h3 + p {
+    margin-top: 20px;
+}
+
